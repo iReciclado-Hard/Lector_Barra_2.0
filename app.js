@@ -102,9 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayProductData(productData) {
         if (productData) {
             productInfoElement.innerHTML = `
-                <p><strong>Descripcion:</strong> ${productData['Descripcion']}</p>
-                <p><strong>Precio:</strong> ${productData['Precio']}</p>
-                <p class="sugerido" style="color: red; font-size: larger;"><strong>Sugerido:</strong> ${productData['Sugerido']}</p>
+                <p><strong>Descripcion:</strong> ${productData['Descripcion']}</p>;
+                <p><strong>Precio:</strong> ${productData['Precio']}</p>;
+                <p class="sugerido" style="color: red; font-size: larger;"><strong>Sugerido:</strong> ${productData['Sugerido']}</p>;
             `;
         } else {
             productInfoElement.innerHTML = `<p>Producto no encontrado.</p>`;
