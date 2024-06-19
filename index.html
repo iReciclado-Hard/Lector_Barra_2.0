@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaneo de Código de Barras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escáner de Código de Barras</h1>
+        <div class="scanner-container">
+            <video id="video-preview" class="video-preview"></video>
+            <button id="startScan" class="button">Iniciar Escaneo</button>
+            <button id="stopScan" class="button">Detener Escaneo</button>
+        </div>
+        <audio id="beep-sound" src="beep.mp3" preload="auto"></audio>
+        <div id="result" class="result"></div>
+        <div id="productInfo" class="product-info"></div>
+    </div>
+    <script src="https://unpkg.com/@zxing/library@latest"></script>
+    <script src="app.js"></script>
+</body>
+</html>
